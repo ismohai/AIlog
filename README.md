@@ -21,9 +21,11 @@ AIlog 是一个用于记录 AI 助手“成功且确实改变状态”的操作�
 等级="中" 时间="2026-02-16 14:03:22" 事件="修改" 行为="修改函数functest的计算公式为xxx。" 路径="src/main.ts"
 ```
 
-## 使用方式（示例）
+## AI 自动调用方式（示例）
 
-在你正在操作的项目目录里执行（日志会写入该目录的 `./AIlog/`）：
+下面命令是给 AI/Agent 调用的。正常使用时由 AI 在每次成功且发生状态变化后自动执行，通常不需要用户手动输入。
+
+AI 在你正在操作的项目目录里调用时，日志会写入该目录的 `./AIlog/`：
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File "<AIlog技能目录>\AIlog\scripts\ailog.ps1" 中 修改 "修改函数functest的计算公式为xxx。" "路径=src/main.ts"
@@ -32,7 +34,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File "<AIlog技能目录>\AIlog\s
 或在 Windows 下直接调用包装器：
 
 ```bat
-"<AIlog技能目录>\AIlog\scripts\ailog.cmd" 中 指令 "使用npm install命令更新了项目xinzuonew。" "命令=npm install"
+"<AIlog技能目录>\AIlog\scripts\ailog.cmd" 中 指令 "使用npm install命令更新了项目myproject。" "命令=npm install"
 ```
 
 ## 安全
