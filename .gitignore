@@ -1,0 +1,6 @@
+# Runtime logs (generated in cwd)
+AIlog/*.log
+
+# Optional local artifacts
+*.tmp
+*.bak
